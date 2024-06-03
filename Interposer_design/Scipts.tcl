@@ -14,7 +14,7 @@ set signal_width 0.7
 set shield_width 0.7
 set routing_layer "metal3"
 set trunk_ndr_pitch [expr $spacing * 2 + $signal_width + $shield_width]
-set ndr_pitch [expr $trunk_ndr_pitch / 1.0]
+set ndr_pitch [expr $trunk_ndr_pitch / 2.0]
 set trunk_spacing [expr $spacing * 2 + $shield_width]
 
 add_ndr -name ndr_signal -spacing "metal1 $spacing metal2 $spacing metal3 $spacing metal4 $spacing" -width "metal1 $signal_width metal2 $signal_width metal3 $signal_width metal4 $signal_width"
